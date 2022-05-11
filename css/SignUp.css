@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body {
+    background: rgb(226, 226, 226);
+    overflow-y: hidden;
+}
+
+.judul {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.bungkus {
+    background-color: white;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    width: 900px;
+    border-radius: 25px;
+}
+
+.form-control {
+    border-radius: 50px; 
+}
+
+.kotak {
+    height: 30px;
+    border-radius: 50px;
+}
+
+.kanan {
+    margin-left: 140px;
+}
+
+.btn {
+    border-radius: 50px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+.col-lg-7 img {
+    width: 490px;
+    height: 525px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+/* breakpoint */
+@media (max-width: 992px) {
+}
+
+@media (max-width: 991px) {  
+    .bungkus {
+        background-color: white;
+        margin-top: 55px;
+        margin-bottom: 50px;
+        width: 500px;
+        height: 525px;
+        border-radius: 25px;
+    }
+    .judul {
+        font-size: 25px;
+    }
+    .kotak {
+        width: 255px;
+        height: 35px;
+    }
+    .col-lg-7 img {
+        width: 200px;
+        height: 525px;
+        border-radius: 25px 0px 0px 25px;
+    }
+    .kanan {
+        margin-left: 100px;
+    }
+    .btn {
+        border-radius: 50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .judul {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .bungkus {
+        background-image: url(Tak\ berjudul23_20220430133534.png);
+        background-size:auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        width: 375px;
+        height: 600px;
+        border-radius: 25px;
+    }
+    .col-sm-5 {
+        display:none ;
+    }
+    .judul {
+        color: white;
+        font-size: 45px;
+    }
+    .putih {
+        color: white;
+        margin-left: 35px;
+    }
+    .form-check-label {
+        color: white;
+    }
+    .kotak {
+        margin-left: 20px;
+        width: 335px;
+        height: 45px;
+        border-radius: 50px;
+    }
+    .form-control {
+        margin-left: 20px;
+        width: 335px;
+    }
+    .kanan {
+        margin-left: 205px;
+        color: white;
+    }
+    .form-check {
+        margin-left: 35px;
+    }
+    .btn {
+        margin-left: 20px;
+        border-radius: 50px;
+        padding-left: 140px;
+        padding-right: 140px;
+    }
+}

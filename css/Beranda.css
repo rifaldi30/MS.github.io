@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+body {
+    background: rgb(226, 226, 226);
+    overflow-x: hidden;
+}
+/* navbar */
+.navbar {
+    background-color: rgb(73, 84, 94);
+}
+.navbar img {
+    margin: 0px 30px 0px 15px;
+    width: 30px;
+    height: 30px;
+}
+.navbar-brand {
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: -11px;
+}
+.inputsearch {
+    border: 3px solid #83bd75;
+    border-radius: 20px 0px 0px 20px;
+    z-index: 1;
+}
+.search {
+    border-radius: 0px 20px 20px 0px;
+}
+.search:hover {
+    color: #83bd75;
+    border-radius: 0px 5px 5px 0px;
+}
+.inputsearch:hover {
+    color: #83bd75;
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* Sidebar */
+.sidebar {
+    position:fixed;
+    width: 70px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.list {
+    position: relative;
+}
+
+.list:nth-child(1) {
+    margin-top: 70px;
+}
+
+.link {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.link .fas {
+    color: black;
+}
+
+.link i {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* transition */
+    transition: all 0.3;
+}
+
+.list:hover i {
+    transform: scale(1.1);
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.397);
+    color: blue;
+}
+
+.link .title {
+    position: absolute;
+    background-color: #fff;
+    height: 100%;
+    padding-right: 65px;
+    padding-left: 20px;
+    line-height: 70px;
+    border-radius:0px 200px 200px 0px;
+    border: 2px solid blue;
+    transform: translateX(-110%);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.list:hover .title {
+    transform: translateX(0);
+}
+
+.logout {
+    margin-top: 140px;
+}
+/* content */
+.main-content {
+    margin-left: 70px;
+}
+
+/* Cover */
+.jumbotron-fluid {
+    background-image: url(empat.png);
+    height: 660px ;
+    position: relative;
+}
+.jumbotron-fluid::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.583);
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron-fluid .display-4 {
+    font-weight: 200;
+    color: white;
+    font-size: 50px;
+    text-shadow: 3px 3px 1px rgb(0, 0, 0);
+    z-index: 1;
+    position: relative;
+}
+.judulutama {
+    margin-top: 300px;
+}
+.lead {
+    color: white;
+    z-index: 99;
+}
+hr {
+    background-color: black;
+    height: 7px;
+}
+.kiri {
+    border-radius: 200px 0px 0px 200px;
+    background-color: #f6ae5581;
+}
+.tengah {
+    background-color: #48bb7881;
+}
+.kanan {
+    border-radius: 0px 200px 200px 0px;
+    background-color: #4299e181;
+}
+/* beranda */
+.judul2 {
+    margin-top: 140px;
+}
+.card-img-top {
+    position: relative;
+}
+.card-img-top{
+    border-radius: 10px 10px 10px 10px;
+}
+.utama {
+    border-radius: 50px;
+}
+.layer1 {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 10px 10px 10px 10px;
+}
+.layer2 {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 10px 10px 10px 10px;
+}
+.layer3 {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-radius: 10px 10px 10px 10px;
+}
+.pilihan1 {
+    display: none;
+    margin-top: 130px;
+    margin-left: 25%;
+    padding: 10px 0px;
+    background: rgb(226, 226, 226);
+    font-weight: 900 !important;
+    width: 50%;
+    color: #f6ae5581;
+    border-radius: 20px;
+    /* transition */
+    transition: all 0.3s;    
+}
+.pilihan2 {
+    display: none;
+    margin-top: 130px;
+    margin-left: 25%;
+    padding: 10px 0px;
+    font-weight: 900 !important;
+    background: rgb(226, 226, 226);
+    width: 50%;
+    color: #48bb7881;
+    border-radius: 20px;
+    /* transition */
+    transition: all 0.3s;    
+}
+.pilihan3 {
+    display: none;
+    margin-top: 130px;
+    margin-left: 25%;
+    padding: 10px 0px;
+    font-weight: 900 !important;
+    background: rgb(226, 226, 226);
+    width: 50%;
+    color: #4299e181;
+    border-radius: 20px;
+    /* transition */
+    transition: all 0.3s;    
+}
+.layer1:hover {
+    background-color: #f6ae5581;
+}
+.layer1:hover .pilihan1 {
+    display: grid;
+}
+.layer2:hover {
+    background-color: #48bb7881;
+}
+.layer2:hover .pilihan2 {
+    display: grid;
+}
+.layer3:hover {
+    background-color: #4299e181;
+}
+.layer3:hover .pilihan3 {
+    display: grid;
+}
+.pilihan1:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    text-decoration: none;
+    color: black;
+}
+.pilihan2:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    text-decoration: none;
+    color: black;
+}
+.pilihan3:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    text-decoration: none;
+    color: black;
+}
+
+/* user online */
+.keatas {
+    margin-bottom: 10px;
+}
+.atas {
+    margin-top: 120px;
+}
+.list .card {
+    width: 100%;
+    height: 270px;
+    margin: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.hijau {
+    background-color: #c0eda6;
+    border-radius: 10px;
+}
+.kuning {
+    background-color: #f9ffa4;
+    border-radius: 10px;
+}
+.merah {
+    background-color: #ff8080;
+    border-radius: 10px;
+}
+.mx-auto {
+    border-radius: 100%;
+}
+.view {
+    margin: -50px 0px 0px 85px;
+}
+.footer:hover {
+    padding-bottom: 100px ;
+}
+
+/* breakpoint */
+@media (max-width: 992px) {
+    .pindah {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 991px) {  
+    .pindah {
+        margin-bottom: 50px;
+    }
+    .form-inline {
+        display: flex;
+        justify-content: center;
+    } 
+}
+
+@media (max-width: 576px) {
+    .display-4, .lead {
+        text-align: center;
+    }
+    .inputsearch {
+        border-radius: 20px 20px 20px 20px;
+    }
+    .search {
+        border-radius: 20px 20px 20px 20px;
+        border: 3px solid #83bd75;
+        color: grey;
+    }
+    .search:hover {
+        color: #83bd75;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .inputsearch:hover {
+        color: #83bd75;
+        border-radius: 5px 5px 5px 5px;
+    }
+    .form-inline {
+        display: flex;
+        justify-content: center;
+    } 
+}
